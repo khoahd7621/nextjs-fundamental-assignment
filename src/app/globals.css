@@ -31,6 +31,7 @@ h6 {
 
 a {
   color: #333333;
+  text-decoration: none;
 }
 a:hover,
 a:focus {
@@ -181,6 +182,46 @@ hr.small {
   }
 }
 
+/* Post preview */
+.post-preview > a {
+  color: #333333;
+}
+.post-preview > a:hover,
+.post-preview > a:focus {
+  text-decoration: none;
+  color: #0085a1;
+}
+.post-preview > a > .post-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.post-preview > a > .post-subtitle {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.post-preview > .post-meta {
+  color: #777777;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+.post-preview > .post-meta > a {
+  text-decoration: none;
+  color: #333333;
+}
+.post-preview > .post-meta > a:hover,
+.post-preview > .post-meta > a:focus {
+  color: #0085a1;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  .post-preview > a > .post-title {
+    font-size: 36px;
+  }
+}
+
 /* Footer */
 footer {
   padding: 50px 0 65px;
@@ -201,4 +242,54 @@ footer .copyright {
   font-size: 1rem;
   text-align: center;
   margin-bottom: 0;
+}
+
+/* Paper */
+.pager {
+  float: right;
+  margin: 1.1rem 0 3rem;
+  list-style: none;
+}
+.pager li > a,
+.pager li > span {
+  font-family: var(--font-lora);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 15px 25px;
+  background-color: white;
+  border-radius: 0;
+  border: 1px solid #c5c5c5;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  color: white;
+  background-color: #0085a1;
+  border: 1px solid #0085a1;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #777777;
+  background-color: #333333;
+  cursor: not-allowed;
+}
+
+.section-heading {
+  font-size: 36px;
+  margin-top: 60px;
+  font-weight: 700;
+}
+
+.caption {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  font-style: italic;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
